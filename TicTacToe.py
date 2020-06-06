@@ -228,7 +228,7 @@ while run:
         play_again = font2.render("Press space to play again", True, (255, 255 ,255))
         win.blit(text, [120, 200])
         win.blit(play_again, [160, 450])
-    if win_check(2):
+    elif win_check(2):
         won = True
         win.fill((0, 0, 0))
         font1 = pg.font.Font(None, 50)
@@ -238,7 +238,7 @@ while run:
         win.blit(text, [120, 200])
         win.blit(play_again, [160, 450])
 
-    if full_check():
+    elif full_check():
         won = True
         win.fill((0, 0, 0))
         font1 = pg.font.Font(None, 70)
