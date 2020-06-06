@@ -218,6 +218,9 @@ while run:
                         draw_object = 'x'
                         board[2][2] = 2
                     ninth_open = False
+                    
+    pg.display.update()
+    pg.time.delay(100)
 
     if win_check(1):
         won = True
